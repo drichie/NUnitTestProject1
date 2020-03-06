@@ -27,7 +27,7 @@ namespace NUnitTestProject1
             driver.FindElement(By.Id("btnSignIn")).Click();
             Thread.Sleep(5000);
             driver.FindElement(By.CssSelector("input[type='text']")).SendKeys("Acompany");
-            driver.FindElement(By.XPath("span[contains(text(), 'Search')]]")).Click();
+            driver.FindElement(By.XPath("//span[contains(text(), 'Search')]]")).Click();
             driver.FindElement(By.CssSelector("span[innerText='Go']")).Click();
             Thread.Sleep(5000);
         }
